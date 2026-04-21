@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Creative Portfolio</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#0b0f1a;
+    color:white;
+    overflow-x:hidden;
+}
+
+/* HERO SECTION */
+.hero{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:80px 10%;
+    background:linear-gradient(135deg,#1f2937,#0b0f1a);
+}
+
+.hero-text h1{
+    font-size:60px;
+}
+
+.hero-text h2{
+    color:#22c55e;
+    margin-top:10px;
+}
+
+.hero-text p{
+    margin-top:15px;
+    color:#cbd5e1;
+    max-width:500px;
+}
+
+.btn{
+    margin-top:20px;
+    display:inline-block;
+    padding:12px 20px;
+    background:#22c55e;
+    color:black;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:bold;
+}
+
+/* PROFILE CARD */
+.profile{
+    width:300px;
+    height:300px;
+    border-radius:50%;
+    overflow:hidden;
+    border:5px solid #22c55e;
+}
+
+.profile img{
+    width:100%;
+}
+
+/* SECTION */
+.section{
+    padding:60px 10%;
+}
+
+/* ABOUT */
+.about{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+}
+
+.card{
+    background:#111827;
+    padding:25px;
+    border-radius:15px;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    background:#1f2937;
+}
+
+/* SKILLS */
+.skills span{
+    display:inline-block;
+    background:#22c55e;
+    color:black;
+    padding:6px 12px;
+    margin:5px;
+    border-radius:5px;
+    font-size:14px;
+}
+
+/* PROJECTS */
+.projects{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+/* CONTACT */
+.contact{
+    text-align:center;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:#111827;
+    margin-top:40px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<div class="hero">
+    <div class="hero-text">
+        <h1>Hello, I'm Anwar</h1>
+        <h2>IT Officer & Web Developer</h2>
+        <p>
+            I create modern websites, manage IT systems, and continuously learn new technologies like Python, Web Development and Automation tools.
+        </p>
+        <a href="#contact" class="btn">Contact Me</a>
+    </div>
+
+    <div class="profile">
+        <img src="Images/my-profile-img.jpg" alt="profile">
+    </div>
+</div>
+
+<!-- ABOUT -->
+<div class="section about">
+    <div class="card">
+        <h2>About Me</h2>
+        <p>
+            I am an IT Officer working in an educational environment. I love building websites, solving technical problems, and improving my programming skills.
+        </p>
+    </div>
+
+    <div class="card skills">
+        <h2>Skills</h2>
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+        <span>Python</span>
+        <span>GitHub</span>
+        <span>Netlify</span>
+    </div>
+</div>
+
+<!-- PROJECTS -->
+<div class="section">
+    <h2>Projects</h2>
+    <div class="projects">
+
+        <div class="card">
+            <h3>School System</h3>
+            <p>Management system for school records and IT tasks.</p>
+        </div>
+
+        <div class="card">
+            <h3>Portfolio Website</h3>
+            <p>Modern personal portfolio for online presence.</p>
+        </div>
+
+        <div class="card">
+            <h3>Typing Tutor Idea</h3>
+            <p>Offline typing software project (Typing with MAW).</p>
+        </div>
+
+    </div>
+</div>
+
+<!-- CONTACT -->
+<div class="section contact" id="contact">
+    <h2>Contact Me</h2>
+    <div class="card">
+        <p>Email: mohammadanwarwali778@gmail.com</p>
+        <p>Whatsapp: +923342401616</p>
+        <a class="btn" href="#">Download CV</a>
+    </div>
+</div>
+
+<footer>
+    © 2026 Anwar | All Rights Reserved
+</footer>
+
+</body>
+</html>
